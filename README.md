@@ -11,10 +11,10 @@
 `import RNA from './client-api';` <br><br>
 **Once imported create an instance of the RNA class**\
 `let API = new RNA(":[PORT OF NODE SERVER]/[file]", "[METHOD]");`\
-**example** : `let API = new RNA(":3000/api", "POST");`<br><br>
+**Example** : `let API = new RNA(":3000/api", "POST");`<br><br>
 **When you want data from the server:**\
 `let data = API.callAPI("[TARGET]");`\
-**example** : `let data = API.callAPI("hello");`\<br><br>
+**Example** : `let data = API.callAPI("hello");`<br><br>
 **Data is returned as an object of {status and message}**\
 `let message = data.message;`\
 `let status = data.status;`\<br><br>
