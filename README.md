@@ -20,15 +20,15 @@ Data is returned as an object of {status and message\
 `let status = data.status;`\
 
 ## Node.js (Server)
-Import the RNA module from the server.js file\
+**Import the RNA module from the server.js file**\
 `const RNA = require('./node-api.js');`<br><br>
-Define options to create API Instance\
-replace `app` with the name of the `express();` instance\
+**Define options to create API Instance**\
+**Replace `app` with the name of the `express();` instance**\
 `let opts = {`\
 `   hookOnto : app,`\
 `   file : '[PORT]',`\
 `   method : 'POST',`\
 `   clientPort : [PORT OF REACT SERVER],`\
 `}`<br><br>
-Create an instance of the RNA module\
+**Create an instance of the RNA module**\
 `new RNA.RNA(opts);`\
