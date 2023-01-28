@@ -17,7 +17,7 @@
 **Example** : `let data = API.callAPI("hello");`<br><br>
 **Data is returned as an object of {status and message}**\
 `let message = data.message;`\
-`let status = data.status;`\<br><br>
+`let status = data.status;`<br><br>
 
 ## Node.js (Server)
 **Import the RNA module from the server.js file**\
