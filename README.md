@@ -10,8 +10,8 @@
 Import the RNA class from the client.js file\
 `import RNA from './client-api';` \
 Once imported create an instance of the RNA class\
-`let API = new RNA(":[PORT]/[file]", "[METHOD]");`\
-example : `let API = new RNA(":3000/api");`\
+`let API = new RNA(":[PORT OF NODE SERVER]/[file]", "[METHOD]");`\
+example : `let API = new RNA(":3000/api", "POST");`\
 When you want data from the server:\
 `let data = API.callAPI("[TARGET]");`\
 example : `let data = API.callAPI("hello");`\
@@ -23,9 +23,12 @@ Data is returned as an object of {status and message\
 Import the RNA module from the server.js file\
 `const RNA = require('./node-api.js');`\
 Define options to create API Instance\
+replace `app` with the name of the `express();` instance\
 `let opts = {`\
 `   hookOnto : app,`\
-`   file : '/api',`\
+`   file : '[PORT]',`\
 `   method : 'POST',`\
-`   clientPort : 3000,`\
+`   clientPort : [PORT OF REACT SERVER],`\
 `}`\
+Create an instance of the RNA module\
+`new RNA.RNA(opts);`
