@@ -7,6 +7,8 @@
 
 **From the react api you send a "target" `let data = API.callAPI("hello");`, when the node server recives this it checks the global function, if one exists with the same name as target, then it is called and the output is returned. If not then we check if there is a global varaible by that name, if one exists it is sent back to the client. If nowthing exists by the name of target, then an error is returned.**
 
+**If what is mentioned above ^^^ is not what you want you can customise the function that is called when a request is recived, your function must take in one parameter of `request` and give an output of `{status : "Failed or Passed"}, message : "return of function"`, you can do this by adding<br><br> `manager : functionName` to opts when you create the node.js instance**
+
 # Installation
 - **Download the .js files**
 - **Put client.js into your react app**
