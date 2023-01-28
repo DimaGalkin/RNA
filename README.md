@@ -21,7 +21,7 @@
 **Import the RNA class from the client.js file**\
 `import RNA from './client-api';` <br><br>
 **Once imported create an instance of the RNA class**\
-`let API = new RNA(":[PORT OF NODE SERVER]/[file]", "[METHOD]");`\
+`let API = new RNA(":[PORT OF NODE SERVER]/[file]");`\
 **Example** : `let API = new RNA(":3000/api", "POST");`<br><br>
 **When you want data from the server:**\
 `let data = API.callAPI("[TARGET]");`\
@@ -37,7 +37,6 @@
 `let opts = {`\
 `   hookOnto : app,`\
 `   file : '[PORT]',`\
-`   method : 'POST',`\
 `   clientPort : [PORT OF REACT SERVER],`\
 `}`<br><br>
 **Create an instance of the RNA module**\

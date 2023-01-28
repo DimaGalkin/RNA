@@ -2,12 +2,7 @@ import { useState, useEffect } from "react";
 
 class RNA {
     constructor (addr, method) {
-        let supportedMethods = ["GET", "POST"];
-        if (supportedMethods.includes(method)) {
-            this.method = method;
-        } else {
-            throw new Error(method + " IS NOT A SUPPORTED METHOD");
-        }
+        this.method = "POST";
 
         this.addr = "http://localhost" + addr;
     }

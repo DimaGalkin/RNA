@@ -3,14 +3,7 @@ const express = require("express");
 
 class RNA {
     constructor (args) {
-        // set api to method used [Only POST and GET supported]
-        if (args.method === "POST") {
-            var api = args.hookOnto.post.bind(args.hookOnto);
-        } else if ( args.method === "GET") { 
-            var api = args.hookOnto.get.bind(args.hookOnto);
-        } else { 
-            return "UNKNOWN Method"; 
-        }
+        var api = args.hookOnto.post.bind(args.hookOnto);
 
         args.hookOnto.use(cors({origin : "http://localhost:" + args.clientPort}))
         args.hookOnto.use(express.json()) 
