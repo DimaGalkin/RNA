@@ -1,6 +1,6 @@
 # RNA
 
-**WARNNING THIS IS NOT FINISHED, THIS IS A WORK IN PROGRESS**
+**# WARNNING THIS IS NOT FINISHED, THIS IS A WORK IN PROGRESS**
 
 **RNA (React-Node API) is an API designed to make interfacing between node.js and React easier**<br><br>
 
