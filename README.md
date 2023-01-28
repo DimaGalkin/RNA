@@ -22,7 +22,7 @@
 `import RNA from './client-api';` <br><br>
 **Once imported create an instance of the RNA class**\
 `let API = new RNA(":[PORT OF NODE SERVER]/[file]");`\
-**Example** : `let API = new RNA(":3000/api", "POST");`<br><br>
+**Example** : `let API = new RNA(":3000/api");`<br><br>
 **When you want data from the server:**\
 `let data = API.callAPI("[TARGET]");`\
 **Example** : `let data = API.callAPI("hello");`<br><br>
