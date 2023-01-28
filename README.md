@@ -1,7 +1,11 @@
 # RNA
 
-#**RNA (React-Node API) is an API designed to make interfacing between node.js and React easier**<br><br>
+**RNA (React-Node API) is an API designed to make interfacing between node.js and React easier**<br><br>
 
+# How does it work?
+RNA works by creating two instances on the client and server, they both communicate through requests with a specified extentio like `/api`, this is specified when both instances are created.<br><br>
+
+From the react api you send a "target" `let data = API.callAPI("hello");`, when the node server recives this it checks the global function, if one exists with the same name as target, then it is called and the output is returned. If not then we check if there is a global varaible by that name, if one exists it is sent back to the client. If nowthing exists by the name of target, then an error is returned.
 
 # Installation
 - **Download the .js files**
