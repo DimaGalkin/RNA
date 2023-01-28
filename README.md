@@ -41,3 +41,7 @@
 `}`<br><br>
 **Create an instance of the RNA module**\
 `new RNA.RNA(opts);`
+
+# Notes
+- **RNA can only use post**
+- **RNA can only be used through localhost for security reasons**
