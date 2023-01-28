@@ -23,9 +23,9 @@ Data is returned as an object of {status and message\
 Import the RNA module from the server.js file\
 `const RNA = require('./node-api.js');`\
 Define options to create API Instance\
-`let opts = {`
-    `hookOnto : app,`
-    `file : '/api',`
-    `method : 'POST',`
-    `clientPort : 3000,`
-`}`
+`let opts = {`\
+    `hookOnto : app,`\
+    `file : '/api',`\
+    `method : 'POST',`\
+    `clientPort : 3000,`\
+`}`\
