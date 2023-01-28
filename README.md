@@ -1,5 +1,9 @@
 # RNA
 
+## About
+**RNA (React-Node API) is an API designed to make interfacing between node.js and React easier**<br><br>
+
+
 # Installation
 - **Download the .js files**
 - **Put client.js into your react app**
