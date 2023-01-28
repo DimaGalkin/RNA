@@ -24,8 +24,8 @@ Import the RNA module from the server.js file\
 `const RNA = require('./node-api.js');`\
 Define options to create API Instance\
 `let opts = {`\
-    `hookOnto : app,`\
-    `file : '/api',`\
-    `method : 'POST',`\
-    `clientPort : 3000,`\
+`   hookOnto : app,`\
+`   file : '/api',`\
+`   method : 'POST',`\
+`   clientPort : 3000,`\
 `}`\
