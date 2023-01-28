@@ -1,9 +1,9 @@
 # RNA
 
 # Installation
-- Download the .js files
-- put client.js into your react app
-- put server.js into your node.js folder
+- **Download the .js files**
+- **Put client.js into your react app**
+- **Put server.js into your node.js folder**
 
 # How To Use
 ## React (Client)
@@ -30,4 +30,4 @@
 `   clientPort : [PORT OF REACT SERVER],`\
 `}`<br><br>
 **Create an instance of the RNA module**\
-`new RNA.RNA(opts);`\
+`new RNA.RNA(opts);`
