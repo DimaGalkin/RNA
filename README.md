@@ -21,14 +21,14 @@ Data is returned as an object of {status and message\
 
 ## Node.js (Server)
 Import the RNA module from the server.js file\
-`const RNA = require('./node-api.js');`\
+`const RNA = require('./node-api.js');`\\
 Define options to create API Instance\
 replace `app` with the name of the `express();` instance\
 `let opts = {`\
 `   hookOnto : app,`\
 `   file : '[PORT]',`\
 `   method : 'POST',`\
-`   clientPort : [PORT OF REACT SERVER],`\
-`}`\
+`   clientPort : [PORT OF REACT SERVER],`\\
+`}`\\
 Create an instance of the RNA module\
-`new RNA.RNA(opts);`
+`new RNA.RNA(opts);`\
